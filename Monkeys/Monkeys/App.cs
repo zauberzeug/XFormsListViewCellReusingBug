@@ -2,15 +2,9 @@
 using System.Collections.ObjectModel;
 using Xamarin.Forms;
 
-// bug:
-// 1) scroll down
-// 2) click button to add new entry at beginning of list
-// 3) scroll down again
-// --> last entry should be "Item 0", but is something like "Item 12"
-
 namespace Monkeys
 {
-    public class App
+    public static class App
     {
         public class Entry
         {
@@ -22,9 +16,8 @@ namespace Monkeys
         public static Page GetMainPage()
         {
             entries = new ObservableCollection<Entry>();
-            // use enough elements to fill the screen to reproduce the bug
             for (var i = 0; i < 15; i++)
-                entries.Insert(0, new Entry { Title = "Item " + i.ToString() + " (start)" });
+                entries.Insert(0, new Entry { Title = "Item " + i + " (start)" });
 
             var list = new ListView {
                 ItemsSource = entries,
@@ -33,7 +26,6 @@ namespace Monkeys
                     title.SetBinding(Label.TextProperty, "Title");
 
                     return new ViewCell {
-                        // works when using "View = title"
                         View = new StackLayout { 
                             Padding = 10, 
                             Children = { title }
@@ -44,7 +36,7 @@ namespace Monkeys
 
             var button = new Button { Text = "Click" };
             button.Clicked += delegate {
-                entries.Insert(0, new Entry { Title = "Item " + entries.Count.ToString() + " (click)" });
+                entries.Insert(0, new Entry { Title = "Item " + entries.Count + " (click)" });
             };
 
             return new ContentPage {

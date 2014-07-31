@@ -22,3 +22,10 @@
 /Users/rodja/Projects/XFormsListViewCellReusingBug/Monkeys/Monkeys/bin/Debug/System.Net.Requests.dll
 /Users/rodja/Projects/XFormsListViewCellReusingBug/Monkeys/Monkeys/bin/Debug/System.Net.NetworkInformation.dll
 /Users/rodja/Projects/XFormsListViewCellReusingBug/Monkeys/Monkeys/bin/Debug/System.Text.RegularExpressions.dll
+/Users/falko/Projects/XFormsListViewCellReusingBug/Monkeys/Monkeys/obj/Debug/.NETPortable,Version=v4.5,Profile=Profile78.AssemblyAttribute.cs
+/Users/falko/Projects/XFormsListViewCellReusingBug/Monkeys/Monkeys/bin/Debug/Monkeys.dll.mdb
+/Users/falko/Projects/XFormsListViewCellReusingBug/Monkeys/Monkeys/bin/Debug/Monkeys.dll
+/Users/falko/Projects/XFormsListViewCellReusingBug/Monkeys/Monkeys/obj/Debug/Monkeys.dll
+/Users/falko/Projects/XFormsListViewCellReusingBug/Monkeys/Monkeys/obj/Debug/Monkeys.dll.mdb
+/Users/falko/Projects/XFormsListViewCellReusingBug/Monkeys/Monkeys/bin/Debug/Xamarin.Forms.Core.dll
+/Users/falko/Projects/XFormsListViewCellReusingBug/Monkeys/Monkeys/bin/Debug/Xamarin.Forms.Xaml.dll
